@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ahdecraft:ruby_ore",
+    "ahdecraft:peridot_ore",
+    "ahdecraft:sapphire_ore",
+    "ahdecraft:reddiamond_ore",
+    "ahdecraft:reddiamond_block"
+  ]
+}

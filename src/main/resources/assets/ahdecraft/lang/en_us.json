@@ -13,6 +13,8 @@
   "block.ahdecraft.sapphire_ore": "Sappire Ore",
   "block.ahdecraft.reddiamond_ore": "Red Diamond Ore",
   "block.ahdecraft.red_coal_ore": "Red Coal Ore",
+  "block.ahdecraft.red_coal_block": "Red Coal Block",
+  "block.ahdecraft.reddiamond_block": "Red Diamond Block",
 
   "creativetab.ahdecraft.items": "AHDECraft Items",
   "creativetab.ahdecraft.blocks": "AHDECraft Blocks"

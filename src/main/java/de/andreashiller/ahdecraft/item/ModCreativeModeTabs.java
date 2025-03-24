@@ -40,6 +40,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.REDDIAMOND_ORE.get());
                         output.accept(ModBlocks.RED_COAL_ORE.get());
+                        output.accept(ModBlocks.RED_COAL_BLOCK.get());
+                        output.accept(ModBlocks.REDDIAMOND_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {
