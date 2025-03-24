@@ -6,5 +6,14 @@
   "item.ahdecraft.reddiamond_ingot": "Red Diamond Ingot",
   "item.ahdecraft.reddiamond_nugget": "Red Diamond Nugget",
   "item.ahdecraft.reddiamond_dust": "Red Diamond Dust",
-  "item.ahdecraft.red_coal": "Red Coal"
+  "item.ahdecraft.red_coal": "Red Coal",
+
+  "block.ahdecraft.ruby_ore": "Ruby Ore",
+  "block.ahdecraft.peridot_ore": "Peridot Ore",
+  "block.ahdecraft.sapphire_ore": "Sappire Ore",
+  "block.ahdecraft.reddiamond_ore": "Red Diamond Ore",
+  "block.ahdecraft.red_coal_ore": "Red Coal Ore",
+
+  "creativetab.ahdecraft.items": "AHDECraft Items",
+  "creativetab.ahdecraft.blocks": "AHDECraft Blocks"
 }
