@@ -1,0 +1,7 @@
+Tin		#c5c5c5
+Silver		#e2e2e2
+Alu		#b7acb2
+Lead		#72bfbf
+Thungsten	#494234
+Silicone	#34332d
+Silicium	#d8bf8c
