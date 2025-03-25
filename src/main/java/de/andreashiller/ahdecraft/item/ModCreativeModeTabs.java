@@ -27,19 +27,41 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.REDDIAMONDNUGGET.get());
                         output.accept(ModItems.REDDIAMONDDUST.get());
                         output.accept(ModItems.REDCOAL.get());
+                        output.accept(ModItems.RAW_TIN.get());
+                        output.accept(ModItems.RAW_SILVER.get());
+                        output.accept(ModItems.RAW_ALU.get());
+                        output.accept(ModItems.RAW_LEAD.get());
+                        output.accept(ModItems.RAW_THUNGSTON.get());
+                        output.accept(ModItems.SILICONE.get());
+                        output.accept(ModItems.RAW_SILICIUM.get());
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> AHDECRAFT_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_blocks_tab",
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_ORES_TAB = CREATIVE_MODE_TABS.register("ahdecraft_ores_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.REDDIAMOND_ORE.get()))
                     .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
-                    .title(Component.translatable("creativetab.ahdecraft.blocks"))
+                    .title(Component.translatable("creativetab.ahdecraft.ores"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.RUBY_ORE.get());
                         output.accept(ModBlocks.PERIDOT_ORE.get());
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.REDDIAMOND_ORE.get());
                         output.accept(ModBlocks.RED_COAL_ORE.get());
+                        output.accept(ModBlocks.TIN_ORE.get());
+                        output.accept(ModBlocks.SILVER_ORE.get());
+                        output.accept(ModBlocks.ALU_ORE.get());
+                        output.accept(ModBlocks.LEAD_ORE.get());
+                        output.accept(ModBlocks.THUNGSTON_ORE.get());
+                        output.accept(ModBlocks.SILICONE_ORE.get());
+                        output.accept(ModBlocks.SILICIUM_ORE.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_blocks_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.REDDIAMOND_BLOCK.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.RED_COAL_BLOCK.get());
                         output.accept(ModBlocks.REDDIAMOND_BLOCK.get());
                     }).build());

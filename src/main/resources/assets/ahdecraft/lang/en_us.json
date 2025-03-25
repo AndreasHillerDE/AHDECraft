@@ -7,6 +7,13 @@
   "item.ahdecraft.reddiamond_nugget": "Red Diamond Nugget",
   "item.ahdecraft.reddiamond_dust": "Red Diamond Dust",
   "item.ahdecraft.red_coal": "Red Coal",
+  "item.ahdecraft.raw_tin": "Raw Tin",
+  "item.ahdecraft.raw_silver": "Raw Silver",
+  "item.ahdecraft.raw_alu": "Raw Aluminium",
+  "item.ahdecraft.raw_lead": "Raw Lead",
+  "item.ahdecraft.raw_thungston": "Raw Thungsten",
+  "item.ahdecraft.silicone": "Silicone",
+  "item.ahdecraft.raw_silicium": "Raw Silicium",
 
   "block.ahdecraft.ruby_ore": "Ruby Ore",
   "block.ahdecraft.peridot_ore": "Peridot Ore",
@@ -15,7 +22,15 @@
   "block.ahdecraft.red_coal_ore": "Red Coal Ore",
   "block.ahdecraft.red_coal_block": "Red Coal Block",
   "block.ahdecraft.reddiamond_block": "Red Diamond Block",
+  "block.ahdecraft.tin_ore": "Tin Ore",
+  "block.ahdecraft.silver_ore": "Silver Ore",
+  "block.ahdecraft.alu_ore": "Aluminium Ore",
+  "block.ahdecraft.lead_ore": "Lead Ore",
+  "block.ahdecraft.thungston_ore": "Thungsten Ore",
+  "block.ahdecraft.silicone_ore": "Silicone Ore",
+  "block.ahdecraft.silicium_ore": "Silicium Ore",
 
   "creativetab.ahdecraft.items": "AHDECraft Items",
-  "creativetab.ahdecraft.blocks": "AHDECraft Blocks"
+  "creativetab.ahdecraft.blocks": "AHDECraft Building Blocks",
+  "creativetab.ahdecraft.ores": "AHDECraft Ores"
 }

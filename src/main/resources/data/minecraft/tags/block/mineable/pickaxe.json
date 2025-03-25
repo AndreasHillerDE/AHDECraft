@@ -7,6 +7,13 @@
     "ahdecraft:red_coal_ore",
     "ahdecraft:red_coal_block",
     "ahdecraft:reddiamond_ore",
-    "ahdecraft:reddiamond_block"
+    "ahdecraft:reddiamond_block",
+    "ahdecraft:tin_ore",
+    "ahdecraft:silver_ore",
+    "ahdecraft:alu_ore",
+    "ahdecraft:lead_ore",
+    "ahdecraft:thungston_ore",
+    "ahdecraft:silicone_ore",
+    "ahdecraft:silicium_ore"
    ]
 }

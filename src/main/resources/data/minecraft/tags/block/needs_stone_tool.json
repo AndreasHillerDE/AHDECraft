@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "ahdecraft:red_coal_ore",
-    "ahdecraft:red_coal_block"
+    "ahdecraft:red_coal_block",
+    "ahdecraft:tin_ore",
+    "ahdecraft:alu_ore",
+    "ahdecraft:silicone_ore"
   ]
 }

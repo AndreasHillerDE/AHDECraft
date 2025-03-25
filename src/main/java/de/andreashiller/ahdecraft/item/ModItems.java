@@ -27,6 +27,20 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REDCOAL = ITEMS.register("red_coal",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_ALU = ITEMS.register("raw_alu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_THUNGSTON = ITEMS.register("raw_thungston",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILICONE = ITEMS.register("silicone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SILICIUM = ITEMS.register("raw_silicium",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

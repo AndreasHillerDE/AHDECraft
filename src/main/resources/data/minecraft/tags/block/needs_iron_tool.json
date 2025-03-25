@@ -5,6 +5,10 @@
     "ahdecraft:peridot_ore",
     "ahdecraft:sapphire_ore",
     "ahdecraft:reddiamond_ore",
-    "ahdecraft:reddiamond_block"
+    "ahdecraft:reddiamond_block",
+    "ahdecraft:silver_ore",
+    "ahdecraft:lead_ore",
+    "ahdecraft:thungston_ore",
+    "ahdecraft:silicium_ore"
   ]
 }
