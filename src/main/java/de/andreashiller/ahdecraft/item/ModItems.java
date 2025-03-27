@@ -11,6 +11,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, AHDECraft.MOD_ID);
 
+    public static final RegistryObject<Item> CONVERSION_BALL = ITEMS.register("conversion_ball",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONVERSION_WAND = ITEMS.register("conversion_wand",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot",
@@ -40,6 +44,20 @@ public class ModItems {
     public static final RegistryObject<Item> SILICONE = ITEMS.register("silicone",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SILICIUM = ITEMS.register("raw_silicium",
+            () -> new Item(new Item.Properties()));
+
+    // INGOTS
+    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ALU_INGOT = ITEMS.register("alu_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THUNGSTON_INGOT = ITEMS.register("thungston_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILICIUM_INGOT = ITEMS.register("silicium_ingot",
             () -> new Item(new Item.Properties()));
 
 

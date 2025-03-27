@@ -34,6 +34,31 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_THUNGSTON.get());
                         output.accept(ModItems.SILICONE.get());
                         output.accept(ModItems.RAW_SILICIUM.get());
+                        output.accept(ModItems.TIN_INGOT.get());
+                        output.accept(ModItems.SILVER_INGOT.get());
+                        output.accept(ModItems.ALU_INGOT.get());
+                        output.accept(ModItems.LEAD_INGOT.get());
+                        output.accept(ModItems.THUNGSTON_INGOT.get());
+                        output.accept(ModItems.SILICIUM_INGOT.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_TOOLS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_tools_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.CONVERSION_WAND.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.tools"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.CONVERSION_BALL.get());
+                        output.accept(ModItems.CONVERSION_WAND.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_WEAPONS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_weapons_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.REDDIAMOND_ORE.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.weapons"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_ORES_TAB = CREATIVE_MODE_TABS.register("ahdecraft_ores_tab",
@@ -62,8 +87,18 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.ahdecraft.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.RUBY_BLOCK.get());
+                        output.accept(ModBlocks.PERIDOT_BLOCK.get());
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RED_COAL_BLOCK.get());
                         output.accept(ModBlocks.REDDIAMOND_BLOCK.get());
+                        output.accept(ModBlocks.TIN_BLOCK.get());
+                        output.accept(ModBlocks.SILVER_BLOCK.get());
+                        output.accept(ModBlocks.ALU_BLOCK.get());
+                        output.accept(ModBlocks.LEAD_BLOCK.get());
+                        output.accept(ModBlocks.THUNGSTON_BLOCK.get());
+                        output.accept(ModBlocks.SILICONE_BLOCK.get());
+                        output.accept(ModBlocks.SILICIUM_BLOCK.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ahdecraft:raw_silver"
+  },
+  "result": {
+    "id": "ahdecraft:silver_ingot"
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

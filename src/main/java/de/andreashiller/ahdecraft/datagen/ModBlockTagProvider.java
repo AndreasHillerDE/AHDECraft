@@ -1,0 +1,77 @@
+package de.andreashiller.ahdecraft.datagen;
+
+import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.ModBlocks;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.data.BlockTagsProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModBlockTagProvider extends BlockTagsProvider {
+    public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+        super(output, lookupProvider, AHDECraft.MOD_ID, existingFileHelper);
+
+    }
+
+    @Override
+    protected void addTags(HolderLookup.Provider pProvider) {
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.REDDIAMOND_BLOCK.get())
+                .add(ModBlocks.RED_COAL_BLOCK.get())
+                .add(ModBlocks.REDDIAMOND_ORE.get())
+                .add(ModBlocks.RED_COAL_ORE.get())
+                .add(ModBlocks.RUBY_ORE.get())
+                .add(ModBlocks.PERIDOT_ORE.get())
+                .add(ModBlocks.SAPPHIRE_ORE.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.ALU_ORE.get())
+                .add(ModBlocks.LEAD_ORE.get())
+                .add(ModBlocks.THUNGSTON_ORE.get())
+                .add(ModBlocks.SILICONE_ORE.get())
+                .add(ModBlocks.SILICIUM_ORE.get())
+                .add(ModBlocks.RUBY_BLOCK.get())
+                .add(ModBlocks.PERIDOT_BLOCK.get())
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.SILVER_BLOCK.get())
+                .add(ModBlocks.ALU_BLOCK.get())
+                .add(ModBlocks.LEAD_BLOCK.get())
+                .add(ModBlocks.THUNGSTON_BLOCK.get())
+                .add(ModBlocks.SILICONE_BLOCK.get())
+                .add(ModBlocks.SILICIUM_BLOCK.get());
+
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.RED_COAL_ORE.get())
+                .add(ModBlocks.RED_COAL_BLOCK.get())
+                .add(ModBlocks.TIN_ORE.get())
+                .add(ModBlocks.ALU_ORE.get())
+                .add(ModBlocks.SILICONE_ORE.get())
+                .add(ModBlocks.TIN_BLOCK.get())
+                .add(ModBlocks.ALU_BLOCK.get())
+                .add(ModBlocks.SILICONE_BLOCK.get());
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.REDDIAMOND_BLOCK.get())
+                .add(ModBlocks.REDDIAMOND_ORE.get())
+                .add(ModBlocks.RUBY_ORE.get())
+                .add(ModBlocks.PERIDOT_ORE.get())
+                .add(ModBlocks.SAPPHIRE_ORE.get())
+                .add(ModBlocks.SILVER_ORE.get())
+                .add(ModBlocks.LEAD_ORE.get())
+                .add(ModBlocks.THUNGSTON_ORE.get())
+                .add(ModBlocks.SILICIUM_ORE.get())
+                .add(ModBlocks.RUBY_BLOCK.get())
+                .add(ModBlocks.PERIDOT_BLOCK.get())
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.SILVER_BLOCK.get())
+                .add(ModBlocks.LEAD_BLOCK.get())
+                .add(ModBlocks.THUNGSTON_BLOCK.get())
+                .add(ModBlocks.SILICIUM_BLOCK.get());
+    }
+}
