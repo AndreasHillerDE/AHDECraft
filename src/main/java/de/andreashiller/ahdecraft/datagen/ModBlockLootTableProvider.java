@@ -8,6 +8,7 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -44,8 +45,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.THUNGSTON_BLOCK.get());
         dropSelf(ModBlocks.SILICONE_BLOCK.get());
         dropSelf(ModBlocks.SILICIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
+        dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
+        dropSelf(ModBlocks.RAW_ALU_BLOCK.get());
+        dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
+        dropSelf(ModBlocks.RAW_THUNGSTON_BLOCK.get());
+        dropSelf(ModBlocks.RAW_SILICIUM_BLOCK.get());
 
-        // One Drop per Ore
+        // One Drop per Stone Ore
         this.add(ModBlocks.REDDIAMOND_ORE.get(),
                 block -> createOreDrop(ModBlocks.REDDIAMOND_ORE.get(), ModItems.REDDIAMOND.get()));
         this.add(ModBlocks.RED_COAL_ORE.get(),
@@ -62,7 +69,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.THUNGSTON_ORE.get(), ModItems.RAW_THUNGSTON.get()));
         this.add(ModBlocks.SILICIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.SILICIUM_ORE.get(), ModItems.RAW_SILICIUM.get()));
-
         this.add(ModBlocks.SILICONE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.SILICONE_ORE.get(), ModItems.SILICONE.get(),1,4));
         this.add(ModBlocks.RUBY_ORE.get(),
@@ -71,6 +77,73 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.PERIDOT_ORE.get(), ModItems.PERIDOT.get(),1,3));
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(),1,3));
+
+        // One Drop per Deepslate Ore
+        this.add(ModBlocks.DEEPSLATE_REDDIAMOND_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_REDDIAMOND_ORE.get(), ModItems.REDDIAMOND.get()));
+        this.add(ModBlocks.DEEPSLATE_RED_COAL_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_RED_COAL_ORE.get(), ModItems.REDCOAL.get()));
+        this.add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.RAW_TIN.get()));
+        this.add(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+        this.add(ModBlocks.DEEPSLATE_ALU_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_ALU_ORE.get(), ModItems.RAW_ALU.get()));
+        this.add(ModBlocks.DEEPSLATE_LEAD_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
+        this.add(ModBlocks.DEEPSLATE_THUNGSTON_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_THUNGSTON_ORE.get(), ModItems.RAW_THUNGSTON.get()));
+        this.add(ModBlocks.DEEPSLATE_SILICIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_SILICIUM_ORE.get(), ModItems.RAW_SILICIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_SILICONE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SILICONE_ORE.get(), ModItems.SILICONE.get(),1,4));
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RUBY.get(),1,3));
+        this.add(ModBlocks.DEEPSLATE_PERIDOT_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_PERIDOT_ORE.get(), ModItems.PERIDOT.get(),1,3));
+        this.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(),1,3));
+
+        // 2 or more Drop per Netherrack Ore
+        this.add(ModBlocks.NETHER_IRON_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_IRON_ORE.get(), Items.RAW_IRON,2,2));
+        this.add(ModBlocks.NETHER_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_COPPER_ORE.get(), Items.RAW_COPPER,4,8));
+        this.add(ModBlocks.NETHER_COAL_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_COAL_ORE.get(), Items.COAL,2,2));
+        this.add(ModBlocks.NETHER_LAPIS_LAZULI_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_LAPIS_LAZULI_ORE.get(), Items.LAPIS_LAZULI,5,10));
+        this.add(ModBlocks.NETHER_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_REDSTONE_ORE.get(), Items.REDSTONE,5,10));
+        this.add(ModBlocks.NETHER_DIAMOND_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_DIAMOND_ORE.get(), Items.DIAMOND,2,2));
+        this.add(ModBlocks.NETHER_EMERALD_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_EMERALD_ORE.get(), Items.EMERALD,2,2));
+        this.add(ModBlocks.NETHER_REDDIAMOND_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_REDDIAMOND_ORE.get(), ModItems.REDDIAMOND.get(),2,2));
+        this.add(ModBlocks.NETHER_RED_COAL_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_RED_COAL_ORE.get(), ModItems.REDCOAL.get(), 2, 2));
+        this.add(ModBlocks.NETHER_TIN_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_TIN_ORE.get(), ModItems.RAW_TIN.get(),2, 2));
+        this.add(ModBlocks.NETHER_SILVER_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_SILVER_ORE.get(), ModItems.RAW_SILVER.get(), 2, 2));
+        this.add(ModBlocks.NETHER_ALU_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_ALU_ORE.get(), ModItems.RAW_ALU.get(),2,2));
+        this.add(ModBlocks.NETHER_LEAD_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_LEAD_ORE.get(), ModItems.RAW_LEAD.get(),2, 2));
+        this.add(ModBlocks.NETHER_THUNGSTON_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_THUNGSTON_ORE.get(), ModItems.RAW_THUNGSTON.get(),2, 2));
+        this.add(ModBlocks.NETHER_SILICIUM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_SILICIUM_ORE.get(), ModItems.RAW_SILICIUM.get(), 2, 2));
+        this.add(ModBlocks.NETHER_SILICONE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_SILICONE_ORE.get(), ModItems.SILICONE.get(),4,8));
+        this.add(ModBlocks.NETHER_RUBY_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_RUBY_ORE.get(), ModItems.RUBY.get(),3,6));
+        this.add(ModBlocks.NETHER_PERIDOT_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_PERIDOT_ORE.get(), ModItems.PERIDOT.get(),3,6));
+        this.add(ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(),3,6));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

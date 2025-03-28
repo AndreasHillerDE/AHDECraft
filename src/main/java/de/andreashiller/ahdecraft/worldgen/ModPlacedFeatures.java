@@ -29,6 +29,27 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SILICONE_ORE_PLACED_KEY = registerKey("silicone_ore_placed");
     public static final ResourceKey<PlacedFeature> SILICIUM_ORE_PLACED_KEY = registerKey("silicium_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_PERIDOT_ORE_PLACED_KEY = registerKey("nether_peridot_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_SAPPHIRE_ORE_PLACED_KEY = registerKey("nether_sapphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_RED_COAL_ORE_PLACED_KEY = registerKey("nether_red_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_REDDIAMOND_ORE_PLACED_KEY = registerKey("nether_reddiamond_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_TIN_ORE_PLACED_KEY = registerKey("nether_tin_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_SILVER_ORE_PLACED_KEY = registerKey("nether_silver_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_ALU_ORE_PLACED_KEY = registerKey("nether_alu_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_LEAD_ORE_PLACED_KEY = registerKey("nether_lead_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_THUNGSTON_ORE_PLACED_KEY = registerKey("nether_thungston_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_SILICONE_ORE_PLACED_KEY = registerKey("nether_silicone_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_SILICIUM_ORE_PLACED_KEY = registerKey("nether_silicium_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> NETHER_IRON_ORE_PLACED_KEY = registerKey("nether_iron_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_COPPER_ORE_PLACED_KEY = registerKey("nether_copper_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_COAL_ORE_PLACED_KEY = registerKey("nether_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_LAPIS_LAZULI_ORE_PLACED_KEY = registerKey("nether_lapis_lazuli_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_REDSTONE_ORE_PLACED_KEY = registerKey("nether_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_DIAMOND_ORE_PLACED_KEY = registerKey("nether_diamond_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_EMERALD_ORE_PLACED_KEY = registerKey("nether_emerald_ore_placed");
+
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -79,6 +100,83 @@ public class ModPlacedFeatures {
         register(context, SILICIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SILICIUM_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        // NETHER GEN
+        register(context, NETHER_REDDIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_REDDIAMOND_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64))));
+
+        register(context, NETHER_RED_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RED_COAL_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RUBY_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_PERIDOT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_PERIDOT_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SAPPHIRE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_TIN_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SILVER_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_ALU_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ALU_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_LEAD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_LEAD_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_THUNGSTON_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_THUNGSTON_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_SILICONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SILICONE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_SILICIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SILICIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_IRON_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_IRON_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_COPPER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_COPPER_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_COAL_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_LAPIS_LAZULI_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_LAPIS_LAZULI_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_REDSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_REDSTONE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(127))));
+
+        register(context, NETHER_DIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_DIAMOND_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64))));
+
+        register(context, NETHER_EMERALD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_EMERALD_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64))));
 
     }
 

@@ -1,6 +1,7 @@
 package de.andreashiller.ahdecraft.item;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -30,7 +31,7 @@ public class ModItems {
     public static final RegistryObject<Item> REDDIAMONDDUST = ITEMS.register("reddiamond_dust",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REDCOAL = ITEMS.register("red_coal",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(),3200));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SILVER = ITEMS.register("raw_silver",

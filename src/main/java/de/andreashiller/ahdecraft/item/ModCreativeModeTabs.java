@@ -2,6 +2,7 @@ package de.andreashiller.ahdecraft.item;
 
 import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.block.ModBlocks;
+import de.andreashiller.ahdecraft.datagen.ModDatapackEntries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -79,6 +80,38 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.THUNGSTON_ORE.get());
                         output.accept(ModBlocks.SILICONE_ORE.get());
                         output.accept(ModBlocks.SILICIUM_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_REDDIAMOND_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RED_COAL_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_TIN_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SILVER_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_ALU_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_LEAD_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_THUNGSTON_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SILICONE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SILICIUM_ORE.get());
+                        output.accept(ModBlocks.NETHER_IRON_ORE.get());
+                        output.accept(ModBlocks.NETHER_COPPER_ORE.get());
+                        output.accept(ModBlocks.NETHER_COAL_ORE.get());
+                        output.accept(ModBlocks.NETHER_LAPIS_LAZULI_ORE.get());
+                        output.accept(ModBlocks.NETHER_REDSTONE_ORE.get());
+                        output.accept(ModBlocks.NETHER_DIAMOND_ORE.get());
+                        output.accept(ModBlocks.NETHER_EMERALD_ORE.get());
+                        output.accept(ModBlocks.NETHER_RUBY_ORE.get());
+                        output.accept(ModBlocks.NETHER_PERIDOT_ORE.get());
+                        output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.NETHER_REDDIAMOND_ORE.get());
+                        output.accept(ModBlocks.NETHER_RED_COAL_ORE.get());
+                        output.accept(ModBlocks.NETHER_TIN_ORE.get());
+                        output.accept(ModBlocks.NETHER_SILVER_ORE.get());
+                        output.accept(ModBlocks.NETHER_ALU_ORE.get());
+                        output.accept(ModBlocks.NETHER_LEAD_ORE.get());
+                        output.accept(ModBlocks.NETHER_THUNGSTON_ORE.get());
+                        output.accept(ModBlocks.NETHER_SILICONE_ORE.get());
+                        output.accept(ModBlocks.NETHER_SILICIUM_ORE.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_BLOCKS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_blocks_tab",
@@ -99,6 +132,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.THUNGSTON_BLOCK.get());
                         output.accept(ModBlocks.SILICONE_BLOCK.get());
                         output.accept(ModBlocks.SILICIUM_BLOCK.get());
+                        output.accept(ModBlocks.RAW_TIN_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SILVER_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ALU_BLOCK.get());
+                        output.accept(ModBlocks.RAW_LEAD_BLOCK.get());
+                        output.accept(ModBlocks.RAW_THUNGSTON_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SILICIUM_BLOCK.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
