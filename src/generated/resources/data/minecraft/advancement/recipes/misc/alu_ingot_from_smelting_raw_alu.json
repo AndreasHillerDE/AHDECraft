@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_alu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ahdecraft:raw_alu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:alu_ingot_from_smelting_raw_alu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_alu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:alu_ingot_from_smelting_raw_alu"
+    ]
+  }
+}

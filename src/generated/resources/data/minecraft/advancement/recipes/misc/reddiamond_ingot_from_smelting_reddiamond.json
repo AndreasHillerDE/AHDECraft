@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_reddiamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ahdecraft:reddiamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:reddiamond_ingot_from_smelting_reddiamond"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_reddiamond"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:reddiamond_ingot_from_smelting_reddiamond"
+    ]
+  }
+}

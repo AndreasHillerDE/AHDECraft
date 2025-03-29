@@ -51,6 +51,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CONVERSION_BALL.get());
                         output.accept(ModItems.CONVERSION_WAND.get());
+                        output.accept(ModItems.REDDIAMOND_PICKAXE.get());
+                        output.accept(ModItems.REDDIAMOND_SHOVEL.get());
+                        output.accept(ModItems.REDDIAMOND_AXE.get());
+                        output.accept(ModItems.REDDIAMOND_HOE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_WEAPONS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_weapons_tab",
@@ -59,7 +63,7 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.ahdecraft.weapons"))
                     .displayItems((itemDisplayParameters, output) -> {
-
+                        output.accept(ModItems.REDDIAMOND_SWORD.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_ORES_TAB = CREATIVE_MODE_TABS.register("ahdecraft_ores_tab",

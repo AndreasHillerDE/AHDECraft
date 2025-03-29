@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_conversion_wand": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ahdecraft:conversion_wand"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ahdecraft:conversion_wand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_conversion_wand"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ahdecraft:conversion_wand"
+    ]
+  }
+}

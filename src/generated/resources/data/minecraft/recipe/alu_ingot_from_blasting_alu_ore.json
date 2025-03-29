@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "alu_ingot",
+  "ingredient": {
+    "item": "ahdecraft:alu_ore"
+  },
+  "result": {
+    "id": "ahdecraft:alu_ingot"
+  }
+}

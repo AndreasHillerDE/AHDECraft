@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_reddiamond_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ahdecraft:reddiamond_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:reddiamond_from_reddiamond_ore_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_reddiamond_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:reddiamond_from_reddiamond_ore_stonecutting"
+    ]
+  }
+}

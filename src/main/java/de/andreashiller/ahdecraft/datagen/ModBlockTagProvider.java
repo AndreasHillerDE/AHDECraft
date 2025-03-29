@@ -2,6 +2,7 @@ package de.andreashiller.ahdecraft.datagen;
 
 import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.block.ModBlocks;
+import de.andreashiller.ahdecraft.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -149,5 +150,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DEEPSLATE_LEAD_ORE.get())
                 .add(ModBlocks.DEEPSLATE_THUNGSTON_ORE.get())
                 .add(ModBlocks.DEEPSLATE_SILICIUM_ORE.get());
+
+        tag(ModTags.Blocks.NEEDS_REDDIAMOND_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_REDDIAMOND_TOOLS)
+                .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .remove(ModTags.Blocks.NEEDS_REDDIAMOND_TOOL);
     }
 }

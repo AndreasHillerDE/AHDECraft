@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_silicone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ahdecraft:silicone_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:silicone_from_silicone_ore_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_silicone_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:silicone_from_silicone_ore_stonecutting"
+    ]
+  }
+}

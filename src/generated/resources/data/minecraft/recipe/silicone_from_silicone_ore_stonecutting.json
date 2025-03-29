@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ahdecraft:silicone_ore"
+  },
+  "result": {
+    "count": 4,
+    "id": "ahdecraft:silicone"
+  }
+}

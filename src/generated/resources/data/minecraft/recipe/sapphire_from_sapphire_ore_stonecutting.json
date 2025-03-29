@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ahdecraft:sapphire_ore"
+  },
+  "result": {
+    "count": 3,
+    "id": "ahdecraft:sapphire"
+  }
+}

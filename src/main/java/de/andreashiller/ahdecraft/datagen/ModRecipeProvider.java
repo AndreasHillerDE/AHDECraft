@@ -112,6 +112,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), ModBlocks.SAPPHIRE_ORE.get(),3);
         stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.SILICONE.get(), ModBlocks.SILICONE_ORE.get(),4);
 
+        // Toolsets
+        createSwordRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_SWORD.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);
+        createPickaxeRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_PICKAXE.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);
+        createShovelRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_SHOVEL.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);
+        createAxeRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_AXE.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);
+        createHoeRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_HOE.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);
+
     }
 
     public static void createDefaultBlockRecipe(RecipeCategory category, @NotNull ItemLike output, int count, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
@@ -127,6 +134,56 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(category, output, 9)
                 .requires(input)
                 .unlockedBy(getHasName(input), has(input)).save(pRecipeOutput);
+    }
+
+    public static void createSwordRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(category, output, 1)
+                .pattern("X")
+                .pattern("X")
+                .pattern("S")
+                .define('X', input)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(input),has(input)).save(pRecipeOutput);
+    }
+
+    public static void createPickaxeRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(category, output, 1)
+                .pattern("XXX")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('X', input)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(input),has(input)).save(pRecipeOutput);
+    }
+
+    public static void createShovelRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(category, output, 1)
+                .pattern("X")
+                .pattern("S")
+                .pattern("S")
+                .define('X', input)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(input),has(input)).save(pRecipeOutput);
+    }
+
+    public static void createAxeRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(category, output, 1)
+                .pattern("XX")
+                .pattern("XS")
+                .pattern(" S")
+                .define('X', input)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(input),has(input)).save(pRecipeOutput);
+    }
+
+    public static void createHoeRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, RecipeOutput pRecipeOutput) {
+        ShapedRecipeBuilder.shaped(category, output, 1)
+                .pattern("XX")
+                .pattern(" S")
+                .pattern(" S")
+                .define('X', input)
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(input),has(input)).save(pRecipeOutput);
     }
 
 }

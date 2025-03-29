@@ -23,6 +23,12 @@
   "item.ahdecraft.conversion_ball": "Conversion Ball",
   "item.ahdecraft.conversion_wand": "Conversion Wand",
 
+  "item.ahdecraft.redidamond_sword": "Red Diamond Sword",
+  "item.ahdecraft.redidamond_pickaxe": "Red Diamond Pickaxe",
+  "item.ahdecraft.redidamond_shovel": "Red Diamond Shovel",
+  "item.ahdecraft.redidamond_axe": "Red Diamond Axe",
+  "item.ahdecraft.redidamond_hoe": "Red Diamond Hoe",
+
   "block.ahdecraft.ruby_ore": "Ruby Ore",
   "block.ahdecraft.peridot_ore": "Peridot Ore",
   "block.ahdecraft.sapphire_ore": "Sappire Ore",

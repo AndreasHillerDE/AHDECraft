@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "silicium_ingot",
+  "ingredient": {
+    "item": "ahdecraft:raw_silicium"
+  },
+  "result": {
+    "id": "ahdecraft:silicium_ingot"
+  }
+}

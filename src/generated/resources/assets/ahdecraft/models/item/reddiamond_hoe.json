@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ahdecraft:item/reddiamond_hoe"
+  }
+}

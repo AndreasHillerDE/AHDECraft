@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ahdecraft:silicium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ahdecraft:silicium_ingot"
+  }
+}

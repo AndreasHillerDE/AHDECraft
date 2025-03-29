@@ -2,7 +2,7 @@ package de.andreashiller.ahdecraft.item;
 
 import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.item.custom.FuelItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -60,6 +60,27 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SILICIUM_INGOT = ITEMS.register("silicium_ingot",
             () -> new Item(new Item.Properties()));
+
+    // TOOLS
+    public static final RegistryObject<Item> REDDIAMOND_SWORD = ITEMS.register("reddiamond_sword",
+            () -> new SwordItem(ModToolTiers.REDDIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.REDDIAMOND, 3, -2.4f))));
+
+    public static final RegistryObject<Item> REDDIAMOND_PICKAXE = ITEMS.register("reddiamond_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.REDDIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.REDDIAMOND, 1, -2.8f))));
+
+    public static final RegistryObject<Item> REDDIAMOND_SHOVEL = ITEMS.register("reddiamond_shovel",
+            () -> new ShovelItem(ModToolTiers.REDDIAMOND, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.REDDIAMOND, 1.5f, -3.0f))));
+
+    public static final RegistryObject<Item> REDDIAMOND_AXE = ITEMS.register("reddiamond_axe",
+            () -> new AxeItem(ModToolTiers.REDDIAMOND, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.REDDIAMOND, 6, -3.2f))));
+
+    public static final RegistryObject<Item> REDDIAMOND_HOE = ITEMS.register("reddiamond_hoe",
+            () -> new HoeItem(ModToolTiers.REDDIAMOND, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.REDDIAMOND, 0, -3.0f))));
 
 
     public static void register(IEventBus eventBus) {
