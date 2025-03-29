@@ -23,11 +23,16 @@
   "item.ahdecraft.conversion_ball": "Conversion Ball",
   "item.ahdecraft.conversion_wand": "Conversion Wand",
 
-  "item.ahdecraft.redidamond_sword": "Red Diamond Sword",
-  "item.ahdecraft.redidamond_pickaxe": "Red Diamond Pickaxe",
-  "item.ahdecraft.redidamond_shovel": "Red Diamond Shovel",
-  "item.ahdecraft.redidamond_axe": "Red Diamond Axe",
-  "item.ahdecraft.redidamond_hoe": "Red Diamond Hoe",
+  "item.ahdecraft.reddiamond_sword": "Red Diamond Sword",
+  "item.ahdecraft.reddiamond_pickaxe": "Red Diamond Pickaxe",
+  "item.ahdecraft.reddiamond_shovel": "Red Diamond Shovel",
+  "item.ahdecraft.reddiamond_axe": "Red Diamond Axe",
+  "item.ahdecraft.reddiamond_hoe": "Red Diamond Hoe",
+
+  "item.ahdecraft.reddiamond.helmet": "Red Diamond Helmet",
+  "item.ahdecraft.reddiamond.chestplate": "Red Diamond Chestplate",
+  "item.ahdecraft.reddiamond.leggings": "Red Diamond Leggings",
+  "item.ahdecraft.reddiamond.boots": "Red Diamond Boots",
 
   "block.ahdecraft.ruby_ore": "Ruby Ore",
   "block.ahdecraft.peridot_ore": "Peridot Ore",
@@ -98,6 +103,7 @@
   "creativetab.ahdecraft.items": "AHDECraft Items",
   "creativetab.ahdecraft.tools": "AHDECraft Tools",
   "creativetab.ahdecraft.weapons": "AHDECraft Weapons",
+  "creativetab.ahdecraft.armor": "AHDECraft Armor",
   "creativetab.ahdecraft.blocks": "AHDECraft Building Blocks",
   "creativetab.ahdecraft.ores": "AHDECraft Ores"
 }

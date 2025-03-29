@@ -2,6 +2,7 @@ package de.andreashiller.ahdecraft.item;
 
 import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.item.custom.FuelItem;
+
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -82,6 +83,21 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.REDDIAMOND, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.REDDIAMOND, 0, -3.0f))));
 
+    public static final RegistryObject<Item> REDDIAMOND_HELMET =ITEMS.register("reddiamond_helmet",
+            () -> new ArmorItem(ModArmorMaterials.REDDIAMOND_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35))));
+
+    public static final RegistryObject<Item> REDDIAMOND_CHESTPLATE =ITEMS.register("reddiamond_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.REDDIAMOND_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(35))));
+
+    public static final RegistryObject<Item> REDDIAMOND_LEGGINGS =ITEMS.register("reddiamond_leggings",
+            () -> new ArmorItem(ModArmorMaterials.REDDIAMOND_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(35))));
+
+    public static final RegistryObject<Item> REDDIAMOND_BOOTS =ITEMS.register("reddiamond_boots",
+            () -> new ArmorItem(ModArmorMaterials.REDDIAMOND_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

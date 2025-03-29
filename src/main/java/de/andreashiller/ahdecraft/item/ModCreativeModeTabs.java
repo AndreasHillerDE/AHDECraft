@@ -59,11 +59,23 @@ public class ModCreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_WEAPONS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_weapons_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.REDDIAMOND_ORE.get()))
+                    .icon(() -> new ItemStack(ModItems.REDDIAMOND_SWORD.get()))
                     .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
                     .title(Component.translatable("creativetab.ahdecraft.weapons"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.REDDIAMOND_SWORD.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_ARMOR_TAB = CREATIVE_MODE_TABS.register("ahdecraft_armor_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.REDDIAMOND_CHESTPLATE.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.armor"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.REDDIAMOND_HELMET.get());
+                        output.accept(ModItems.REDDIAMOND_CHESTPLATE.get());
+                        output.accept(ModItems.REDDIAMOND_LEGGINGS.get());
+                        output.accept(ModItems.REDDIAMOND_BOOTS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_ORES_TAB = CREATIVE_MODE_TABS.register("ahdecraft_ores_tab",
