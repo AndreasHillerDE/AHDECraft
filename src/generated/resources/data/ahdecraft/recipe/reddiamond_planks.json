@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ahdecraft:reddiamond_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "ahdecraft:reddiamond_planks"
+  }
+}

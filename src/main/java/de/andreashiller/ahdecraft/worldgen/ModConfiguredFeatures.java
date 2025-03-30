@@ -7,11 +7,17 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
@@ -53,6 +59,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_REDSTONE_ORE_KEY = registerKey("nether_redstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_DIAMOND_ORE_KEY = registerKey("nether_diamond_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_EMERALD_ORE_KEY = registerKey("nether_emerald_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> REDDIAMOND_KEY = registerKey("reddiamond");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -210,6 +218,15 @@ public class ModConfiguredFeatures {
         register(context, NETHER_REDSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(netherRedstoneOre, 6));
         register(context, NETHER_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(netherDiamondOre, 2));
         register(context, NETHER_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(netherEmeraldOre, 2));
+
+        register(context, REDDIAMOND_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.REDDIAMOND_LOG.get()),
+                new ForkingTrunkPlacer(4, 0, 0),
+
+                BlockStateProvider.simple(ModBlocks.REDDIAMOND_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
+
+                new TwoLayersFeatureSize(0, 0, 0)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

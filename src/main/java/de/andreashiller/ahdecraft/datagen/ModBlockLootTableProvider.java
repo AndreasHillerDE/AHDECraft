@@ -51,6 +51,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
         dropSelf(ModBlocks.RAW_THUNGSTON_BLOCK.get());
         dropSelf(ModBlocks.RAW_SILICIUM_BLOCK.get());
+        dropSelf(ModBlocks.REDDIAMOND_LOG.get());
+        dropSelf(ModBlocks.REDDIAMOND_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_REDDIAMOND_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get());
+        dropSelf(ModBlocks.REDDIAMOND_PLANKS.get());
+        dropSelf(ModBlocks.REDDIAMOND_SAPLING.get());
 
         // One Drop per Stone Ore
         this.add(ModBlocks.REDDIAMOND_ORE.get(),
@@ -143,6 +149,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.NETHER_PERIDOT_ORE.get(), ModItems.PERIDOT.get(),3,6));
         this.add(ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.NETHER_SAPPHIRE_ORE.get(), ModItems.SAPPHIRE.get(),3,6));
+
+        // LEAVES
+        this.add(ModBlocks.REDDIAMOND_LEAVES.get(),
+                block -> createLeavesDrops(block, ModBlocks.REDDIAMOND_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
     }
 

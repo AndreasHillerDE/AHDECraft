@@ -1,14 +1,18 @@
 package de.andreashiller.ahdecraft.block;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.custom.ModFlammableRotatedPillarBlock;
 import de.andreashiller.ahdecraft.item.ModItems;
+import de.andreashiller.ahdecraft.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -270,6 +274,57 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    // ReddiamondTree Blocks
+    public static final RegistryObject<RotatedPillarBlock> REDDIAMOND_LOG = registerBlock("reddiamond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<RotatedPillarBlock> REDDIAMOND_WOOD = registerBlock("reddiamond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_REDDIAMOND_LOG = registerBlock("stripped_reddiamond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_REDDIAMOND_WOOD = registerBlock("stripped_reddiamond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> REDDIAMOND_PLANKS = registerBlock("reddiamond_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+            });
+
+    public static final RegistryObject<Block> REDDIAMOND_LEAVES = registerBlock("reddiamond_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> REDDIAMOND_SAPLING = registerBlock("reddiamond_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.REDDIAMOND,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

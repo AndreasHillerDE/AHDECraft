@@ -157,5 +157,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_REDDIAMOND_TOOLS)
                 .addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
                 .remove(ModTags.Blocks.NEEDS_REDDIAMOND_TOOL);
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.REDDIAMOND_LOG.get())
+                .add(ModBlocks.REDDIAMOND_WOOD.get())
+                .add(ModBlocks.STRIPPED_REDDIAMOND_LOG.get())
+                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get());
     }
 }

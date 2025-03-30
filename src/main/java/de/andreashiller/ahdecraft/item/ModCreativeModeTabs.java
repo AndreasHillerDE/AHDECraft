@@ -43,6 +43,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SILICIUM_INGOT.get());
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_NATURE_TAB = CREATIVE_MODE_TABS.register("ahdecraft_nature_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.REDDIAMOND_SAPLING.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.nature"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        // SAPLINGS
+                        output.accept(ModBlocks.REDDIAMOND_SAPLING.get());
+                        // LEAVES
+                        output.accept(ModBlocks.REDDIAMOND_LEAVES.get());
+                        // WOODTYPES
+                        output.accept(ModBlocks.REDDIAMOND_LOG.get());
+                        output.accept(ModBlocks.REDDIAMOND_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_REDDIAMOND_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get());
+                        output.accept(ModBlocks.REDDIAMOND_PLANKS.get());
+                    }).build());
+
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_TOOLS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_tools_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.CONVERSION_WAND.get()))

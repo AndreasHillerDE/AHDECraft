@@ -1,6 +1,7 @@
 package de.andreashiller.ahdecraft.datagen;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.ModBlocks;
 import de.andreashiller.ahdecraft.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -10,6 +11,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -74,6 +76,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.REDDIAMOND_CHESTPLATE);
         trimmedArmorItem(ModItems.REDDIAMOND_LEGGINGS);
         trimmedArmorItem(ModItems.REDDIAMOND_BOOTS);
+
+        saplingItem(ModBlocks.REDDIAMOND_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(AHDECraft.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

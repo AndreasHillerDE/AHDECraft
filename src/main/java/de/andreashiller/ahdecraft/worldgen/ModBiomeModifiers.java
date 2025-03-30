@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
@@ -47,6 +48,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_REDSTONE_ORE = registerKey("add_nether_redstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_DIAMOND_ORE = registerKey("add_nether_diamond_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_EMERALD_ORE = registerKey("add_nether_emerald_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_REDDIAMOND_TREE = registerKey("add_tree_reddiamond");
 
 
 
@@ -210,6 +213,11 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.NETHER_EMERALD_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_REDDIAMOND_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.REDDIAMOND_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }
 

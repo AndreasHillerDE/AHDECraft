@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ahdecraft:block/stripped_reddiamond_log",
+    "side": "ahdecraft:block/stripped_reddiamond_log"
+  }
+}

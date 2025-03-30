@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ahdecraft:block/reddiamond_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ahdecraft:block/reddiamond_log"
+    },
+    "axis=z": {
+      "model": "ahdecraft:block/reddiamond_log_horizontal",
+      "x": 90
+    }
+  }
+}

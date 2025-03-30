@@ -86,6 +86,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createDefaultShapelessRecipe(RecipeCategory.MISC, ModItems.RAW_THUNGSTON.get(), ModBlocks.RAW_THUNGSTON_BLOCK.get(), 9, pRecipeOutput);
         createDefaultShapelessRecipe(RecipeCategory.MISC, ModItems.RAW_SILICIUM.get(), ModBlocks.RAW_SILICIUM_BLOCK.get(), 9, pRecipeOutput);
 
+        createDefaultShapelessRecipe(RecipeCategory.MISC, ModBlocks.REDDIAMOND_PLANKS.get(), ModBlocks.REDDIAMOND_LOG.get(), 4, pRecipeOutput);
+
         // SMELTING
         oreSmelting(pRecipeOutput, REDDIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REDDIAMONDINGOT.get(), 0.25f, 200, "reddiamond");
         oreSmelting(pRecipeOutput, TIN_SMELTABLES, RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.25f, 200, "tin_ingot");
@@ -131,7 +133,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     public static void createDefaultShapelessRecipe(RecipeCategory category, @NotNull ItemLike output, @NotNull ItemLike input, int count, RecipeOutput pRecipeOutput) {
-        ShapelessRecipeBuilder.shapeless(category, output, 9)
+        ShapelessRecipeBuilder.shapeless(category, output, count)
                 .requires(input)
                 .unlockedBy(getHasName(input), has(input)).save(pRecipeOutput);
     }

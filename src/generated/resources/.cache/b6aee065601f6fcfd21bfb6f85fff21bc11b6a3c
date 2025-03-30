@@ -1,6 +1,7 @@
-// 1.21.1	2025-03-29T21:20:47.6615997	Tags for minecraft:block mod id ahdecraft
+// 1.21.1	2025-03-30T11:36:22.0638075	Tags for minecraft:block mod id ahdecraft
 bee96ca33618a389fc1bff19f2cf26a57796ecef data/ahdecraft/tags/block/incorrect_for_reddiamond_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/ahdecraft/tags/block/needs_reddiamond_tool.json
+8f70ff5ab6e4bc3713a64b233e7944373f80c9bd data/minecraft/tags/block/logs_that_burn.json
 141b2dd5a5bed6ec97a68876f44b5c40149db66c data/minecraft/tags/block/mineable/pickaxe.json
 b893b4feb82d59457a1f0746119804df16cd5fd1 data/minecraft/tags/block/needs_iron_tool.json
 6226226053a8d3e0a6faa73a8cdbfea5b0e54e46 data/minecraft/tags/block/needs_stone_tool.json

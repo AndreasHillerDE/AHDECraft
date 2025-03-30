@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ahdecraft:block/reddiamond_log",
+    "side": "ahdecraft:block/reddiamond_log"
+  }
+}

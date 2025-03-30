@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-29T00:58:56.6370028	Loot Tables
+// 1.21.1	2025-03-30T11:36:22.0628086	Loot Tables
 181fb44b339f4e8e24bbe8ff6e04a35a964281bf data/ahdecraft/loot_table/blocks/alu_block.json
 b4587a49c34a45823b07d2066baca9a5504483cb data/ahdecraft/loot_table/blocks/alu_ore.json
 1c35ceae39155514535ae9233cc6ccdb81cfcf25 data/ahdecraft/loot_table/blocks/deepslate_alu_ore.json
@@ -43,7 +43,12 @@ e7efc0dba22fcb65237a47de54462f17811fef9a data/ahdecraft/loot_table/blocks/raw_al
 6795249a44bc015969320a3f74e0d06096b288fa data/ahdecraft/loot_table/blocks/raw_thungston_block.json
 571b5de9fcf216429ecdf4be906d2cf67691247a data/ahdecraft/loot_table/blocks/raw_tin_block.json
 4d63563c8cc7a7e8feffac173dfcf2505e6cb601 data/ahdecraft/loot_table/blocks/reddiamond_block.json
+0633a9a9c7f2c1120f1f77e40e5ef0421456c962 data/ahdecraft/loot_table/blocks/reddiamond_leaves.json
+afc625e7d144226d56940e174ddc7efefd9115bb data/ahdecraft/loot_table/blocks/reddiamond_log.json
 8e23262dc854a12696ed547f6a1de1bd38a5fd71 data/ahdecraft/loot_table/blocks/reddiamond_ore.json
+2f1014781ffe128c4775d28f76cb757840f1fe93 data/ahdecraft/loot_table/blocks/reddiamond_planks.json
+554efb2f92fdf61e64a96218333003edd0e8d9bd data/ahdecraft/loot_table/blocks/reddiamond_sapling.json
+45bb18ba8579955f2049833b6668fe31932808e8 data/ahdecraft/loot_table/blocks/reddiamond_wood.json
 ac01a58162c56cdf42f55f86f38d2228e3996be7 data/ahdecraft/loot_table/blocks/red_coal_block.json
 50a9f9e8c74259dc59c0f5dc2f19385704f41e04 data/ahdecraft/loot_table/blocks/red_coal_ore.json
 6dbb2f1cb103603ec8f64a5e594e5baa78771317 data/ahdecraft/loot_table/blocks/ruby_block.json
@@ -56,6 +61,8 @@ b4a999dc438f6dad531007c83dac41fbbcd89a6e data/ahdecraft/loot_table/blocks/silici
 fc3e7d61d19bbf2f0df40cbc897c6200158bee01 data/ahdecraft/loot_table/blocks/silicone_ore.json
 487cbf396af34f68d159b367b5ea09b00ab695f7 data/ahdecraft/loot_table/blocks/silver_block.json
 a749d555a9c06877a0ad2c3d3965f8d0d1c5c0ce data/ahdecraft/loot_table/blocks/silver_ore.json
+b2513ca8162753f4e836be11d7116db3bf003718 data/ahdecraft/loot_table/blocks/stripped_reddiamond_log.json
+fefdc043b54f5f29c0d4d2b2d2cb4a37eefb80d8 data/ahdecraft/loot_table/blocks/stripped_reddiamond_wood.json
 35033ed2758203be3a45ff99f9ccbf2994185cb2 data/ahdecraft/loot_table/blocks/thungston_block.json
 7fa0c4ecc7cee078215279ff5c6491883a26e4ad data/ahdecraft/loot_table/blocks/thungston_ore.json
 866b08e204b4907879621b15a6378249789287a5 data/ahdecraft/loot_table/blocks/tin_block.json

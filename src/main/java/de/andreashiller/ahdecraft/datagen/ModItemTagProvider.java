@@ -1,6 +1,7 @@
 package de.andreashiller.ahdecraft.datagen;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.ModBlocks;
 import de.andreashiller.ahdecraft.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -24,6 +25,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.REDDIAMOND_CHESTPLATE.get())
                 .add(ModItems.REDDIAMOND_LEGGINGS.get())
                 .add(ModItems.REDDIAMOND_BOOTS.get());
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.REDDIAMOND_LOG.get().asItem())
+                .add(ModBlocks.REDDIAMOND_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_REDDIAMOND_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.REDDIAMOND_PLANKS.get().asItem());
     }
 }
 

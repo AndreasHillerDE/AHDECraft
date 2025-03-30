@@ -1,2 +1,4 @@
-// 1.21.1	2025-03-29T23:12:30.8641797	Tags for minecraft:item mod id ahdecraft
+// 1.21.1	2025-03-30T11:36:22.061808	Tags for minecraft:item mod id ahdecraft
+8f70ff5ab6e4bc3713a64b233e7944373f80c9bd data/minecraft/tags/item/logs_that_burn.json
+25bc46ac91a83d55305a4ba9aacc320644bf3e5e data/minecraft/tags/item/planks.json
 ae1e72bb5eb4fb46147c330aef2d539a73818600 data/minecraft/tags/item/trimmable_armor.json

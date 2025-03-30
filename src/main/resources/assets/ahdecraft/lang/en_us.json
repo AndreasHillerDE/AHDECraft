@@ -100,10 +100,19 @@
   "block.ahdecraft.raw_thungston_block": "Raw Thungsten Block",
   "block.ahdecraft.raw_silicium_block": "Raw Silicium Block",
 
+  "block.ahdecraft.reddiamond_log": "Red Diamond Log",
+  "block.ahdecraft.reddiamond_wood": "Red Diamond Wood",
+  "block.ahdecraft.stripped_reddiamond_log": "Stripped Red Diamond Log",
+  "block.ahdecraft.stripped_reddiamond_wood": "Stripped Red Diamond Wood",
+  "block.ahdecraft.reddiamond_planks": "Red Diamond Planks",
+  "block.ahdecraft.reddiamond_leaves": "Red Diamond Leaves",
+  "block.ahdecraft.reddiamond_sapling": "Red Diamond Sapling",
+
   "creativetab.ahdecraft.items": "AHDECraft Items",
   "creativetab.ahdecraft.tools": "AHDECraft Tools",
   "creativetab.ahdecraft.weapons": "AHDECraft Weapons",
   "creativetab.ahdecraft.armor": "AHDECraft Armor",
   "creativetab.ahdecraft.blocks": "AHDECraft Building Blocks",
-  "creativetab.ahdecraft.ores": "AHDECraft Ores"
+  "creativetab.ahdecraft.ores": "AHDECraft Ores",
+  "creativetab.ahdecraft.nature": "AHDECraft Nature"
 }
