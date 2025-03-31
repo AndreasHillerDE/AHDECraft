@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
@@ -61,6 +62,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_EMERALD_ORE_KEY = registerKey("nether_emerald_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> REDDIAMOND_KEY = registerKey("reddiamond");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RUBBER_KEY = registerKey("rubber");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -219,14 +221,25 @@ public class ModConfiguredFeatures {
         register(context, NETHER_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(netherDiamondOre, 2));
         register(context, NETHER_EMERALD_ORE_KEY, Feature.ORE, new OreConfiguration(netherEmeraldOre, 2));
 
+        // REDIAMOND TREE
         register(context, REDDIAMOND_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.REDDIAMOND_LOG.get()),
-                new ForkingTrunkPlacer(4, 0, 0),
+                new StraightTrunkPlacer(4, 2, 3),
 
                 BlockStateProvider.simple(ModBlocks.REDDIAMOND_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), 3),
 
-                new TwoLayersFeatureSize(0, 0, 0)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        // RUBBER TREE
+        register(context, RUBBER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LOG.get()),
+                new StraightTrunkPlacer(4, 4, 3),
+
+                BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), 3),
+
+                new TwoLayersFeatureSize(2, 0, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

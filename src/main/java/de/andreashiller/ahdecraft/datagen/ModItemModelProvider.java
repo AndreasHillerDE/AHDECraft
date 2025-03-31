@@ -78,6 +78,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.REDDIAMOND_BOOTS);
 
         saplingItem(ModBlocks.REDDIAMOND_SAPLING);
+        saplingItem(ModBlocks.RUBBER_TREE_SAPLING);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

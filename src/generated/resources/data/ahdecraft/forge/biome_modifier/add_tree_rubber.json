@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:swamp"
+  ],
+  "features": "ahdecraft:rubber_placed",
+  "step": "vegetal_decoration"
+}

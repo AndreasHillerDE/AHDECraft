@@ -326,6 +326,59 @@ public class ModBlocks {
     public static final RegistryObject<Block> REDDIAMOND_SAPLING = registerBlock("reddiamond_sapling",
             () -> new SaplingBlock(ModTreeGrowers.REDDIAMOND,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+
+    // Rubber Tree
+    public static final RegistryObject<RotatedPillarBlock> RUBBER_TREE_LOG = registerBlock("rubber_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<RotatedPillarBlock> RUBBER_TREE_WOOD = registerBlock("rubber_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_RUBBER_TREE_LOG = registerBlock("stripped_rubber_tree_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_RUBBER_TREE_WOOD = registerBlock("stripped_rubber_tree_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> RUBBER_TREE_PLANKS = registerBlock("rubber_tree_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+            });
+
+    public static final RegistryObject<Block> RUBBER_TREE_LEAVES = registerBlock("rubber_tree_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> RUBBER_TREE_SAPLING = registerBlock("rubber_tree_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.RUBBER,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-30T11:36:22.0628086	Loot Tables
+// 1.21.1	2025-03-31T18:06:53.0865732	Loot Tables
 181fb44b339f4e8e24bbe8ff6e04a35a964281bf data/ahdecraft/loot_table/blocks/alu_block.json
 b4587a49c34a45823b07d2066baca9a5504483cb data/ahdecraft/loot_table/blocks/alu_ore.json
 1c35ceae39155514535ae9233cc6ccdb81cfcf25 data/ahdecraft/loot_table/blocks/deepslate_alu_ore.json
@@ -51,6 +51,11 @@ afc625e7d144226d56940e174ddc7efefd9115bb data/ahdecraft/loot_table/blocks/reddia
 45bb18ba8579955f2049833b6668fe31932808e8 data/ahdecraft/loot_table/blocks/reddiamond_wood.json
 ac01a58162c56cdf42f55f86f38d2228e3996be7 data/ahdecraft/loot_table/blocks/red_coal_block.json
 50a9f9e8c74259dc59c0f5dc2f19385704f41e04 data/ahdecraft/loot_table/blocks/red_coal_ore.json
+43807185d02cb4bdb7a8a245e80af65b55e94b41 data/ahdecraft/loot_table/blocks/rubber_tree_leaves.json
+19ed11750b4a00ce0f016d594590bf5df9b3738c data/ahdecraft/loot_table/blocks/rubber_tree_log.json
+74aa7ea29821450a18c54af36fd597abfac1ba7d data/ahdecraft/loot_table/blocks/rubber_tree_planks.json
+4fb35555cf2dafb5b9670077eab37c448e27090b data/ahdecraft/loot_table/blocks/rubber_tree_sapling.json
+e4111d5d6ba2df1d87b9805e7f9e637cb836acba data/ahdecraft/loot_table/blocks/rubber_tree_wood.json
 6dbb2f1cb103603ec8f64a5e594e5baa78771317 data/ahdecraft/loot_table/blocks/ruby_block.json
 78129742a7acdd0a9611b7ae3c3fb6bf1751ed80 data/ahdecraft/loot_table/blocks/ruby_ore.json
 55f3d1caeaf6bb26ac020ae27ca930182cf51812 data/ahdecraft/loot_table/blocks/sapphire_block.json
@@ -63,6 +68,8 @@ fc3e7d61d19bbf2f0df40cbc897c6200158bee01 data/ahdecraft/loot_table/blocks/silico
 a749d555a9c06877a0ad2c3d3965f8d0d1c5c0ce data/ahdecraft/loot_table/blocks/silver_ore.json
 b2513ca8162753f4e836be11d7116db3bf003718 data/ahdecraft/loot_table/blocks/stripped_reddiamond_log.json
 fefdc043b54f5f29c0d4d2b2d2cb4a37eefb80d8 data/ahdecraft/loot_table/blocks/stripped_reddiamond_wood.json
+5c7a833b446029de315ad565dcb31e582ea4d4a0 data/ahdecraft/loot_table/blocks/stripped_rubber_tree_log.json
+a4f3457899a72032cc70a75b00afa69cae6f4f86 data/ahdecraft/loot_table/blocks/stripped_rubber_tree_wood.json
 35033ed2758203be3a45ff99f9ccbf2994185cb2 data/ahdecraft/loot_table/blocks/thungston_block.json
 7fa0c4ecc7cee078215279ff5c6491883a26e4ad data/ahdecraft/loot_table/blocks/thungston_ore.json
 866b08e204b4907879621b15a6378249789287a5 data/ahdecraft/loot_table/blocks/tin_block.json

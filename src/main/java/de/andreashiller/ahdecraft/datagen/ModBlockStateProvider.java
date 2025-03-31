@@ -85,20 +85,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_THUNGSTON_BLOCK);
         blockWithItem(ModBlocks.RAW_SILICIUM_BLOCK);
 
+        // REDDIAMOND TREE
         logBlock(ModBlocks.REDDIAMOND_LOG.get());
         axisBlock(ModBlocks.REDDIAMOND_WOOD.get(), blockTexture(ModBlocks.REDDIAMOND_LOG.get()), blockTexture(ModBlocks.REDDIAMOND_LOG.get()));
         logBlock(ModBlocks.STRIPPED_REDDIAMOND_LOG.get());
         axisBlock(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get(), blockTexture(ModBlocks.STRIPPED_REDDIAMOND_LOG.get()), blockTexture(ModBlocks.STRIPPED_REDDIAMOND_LOG.get()));
 
+        // RUBBER TREE
+        logBlock(ModBlocks.RUBBER_TREE_LOG.get());
+        axisBlock(ModBlocks.RUBBER_TREE_WOOD.get(), blockTexture(ModBlocks.RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.RUBBER_TREE_LOG.get()));
+        logBlock(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
+        axisBlock(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get(), blockTexture(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()), blockTexture(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get()));
+
+
+        // RED DIAMOND TREE
         blockItem(ModBlocks.REDDIAMOND_LOG);
         blockItem(ModBlocks.REDDIAMOND_WOOD);
         blockItem(ModBlocks.STRIPPED_REDDIAMOND_LOG);
         blockItem(ModBlocks.STRIPPED_REDDIAMOND_WOOD);
-
         blockWithItem(ModBlocks.REDDIAMOND_PLANKS);
-
         leavesBlock(ModBlocks.REDDIAMOND_LEAVES);
         saplingBlock(ModBlocks.REDDIAMOND_SAPLING);
+
+        // RUBBER TREE
+        blockItem(ModBlocks.RUBBER_TREE_LOG);
+        blockItem(ModBlocks.RUBBER_TREE_WOOD);
+        blockItem(ModBlocks.STRIPPED_RUBBER_TREE_LOG);
+        blockItem(ModBlocks.STRIPPED_RUBBER_TREE_WOOD);
+        blockWithItem(ModBlocks.RUBBER_TREE_PLANKS);
+        leavesBlock(ModBlocks.RUBBER_TREE_LEAVES);
+        saplingBlock(ModBlocks.RUBBER_TREE_SAPLING);
 
     }
 

@@ -50,7 +50,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_EMERALD_ORE = registerKey("add_nether_emerald_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_REDDIAMOND_TREE = registerKey("add_tree_reddiamond");
-
+    public static final ResourceKey<BiomeModifier> ADD_RUBBER_TREE = registerKey("add_tree_rubber");
 
 
 
@@ -215,8 +215,13 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_REDDIAMOND_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS)),
+                HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.REDDIAMOND_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_RUBBER_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.FOREST),biomes.getOrThrow(Biomes.SWAMP)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.RUBBER_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

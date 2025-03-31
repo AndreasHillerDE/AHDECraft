@@ -51,14 +51,25 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         // SAPLINGS
                         output.accept(ModBlocks.REDDIAMOND_SAPLING.get());
+                        output.accept(ModBlocks.RUBBER_TREE_SAPLING.get());
                         // LEAVES
                         output.accept(ModBlocks.REDDIAMOND_LEAVES.get());
+                        output.accept(ModBlocks.RUBBER_TREE_LEAVES.get());
                         // WOODTYPES
                         output.accept(ModBlocks.REDDIAMOND_LOG.get());
+                        output.accept(ModBlocks.RUBBER_TREE_LOG.get());
+
                         output.accept(ModBlocks.REDDIAMOND_WOOD.get());
+                        output.accept(ModBlocks.RUBBER_TREE_WOOD.get());
+
                         output.accept(ModBlocks.STRIPPED_REDDIAMOND_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get());
+
                         output.accept(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
+
                         output.accept(ModBlocks.REDDIAMOND_PLANKS.get());
+                        output.accept(ModBlocks.RUBBER_TREE_PLANKS.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_TOOLS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_tools_tab",

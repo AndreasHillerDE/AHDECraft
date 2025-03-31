@@ -43,6 +43,16 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
             }
         }
 
+        if(context.getItemInHand().getItem() instanceof AxeItem) {
+            if (state.is(ModBlocks.RUBBER_TREE_LOG.get())) {
+                return ModBlocks.STRIPPED_RUBBER_TREE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+
+            if (state.is(ModBlocks.RUBBER_TREE_WOOD.get())) {
+                return ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+        }
+
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }
 }

@@ -162,6 +162,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.REDDIAMOND_LOG.get())
                 .add(ModBlocks.REDDIAMOND_WOOD.get())
                 .add(ModBlocks.STRIPPED_REDDIAMOND_LOG.get())
-                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get());
+                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get())
+                .add(ModBlocks.RUBBER_TREE_LOG.get())
+                .add(ModBlocks.RUBBER_TREE_WOOD.get())
+                .add(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get())
+                .add(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get());
     }
 }

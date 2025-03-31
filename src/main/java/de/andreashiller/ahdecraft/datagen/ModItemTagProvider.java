@@ -30,10 +30,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.REDDIAMOND_LOG.get().asItem())
                 .add(ModBlocks.REDDIAMOND_WOOD.get().asItem())
                 .add(ModBlocks.STRIPPED_REDDIAMOND_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get().asItem());
+                .add(ModBlocks.STRIPPED_REDDIAMOND_WOOD.get().asItem())
+                .add(ModBlocks.RUBBER_TREE_LOG.get().asItem())
+                .add(ModBlocks.RUBBER_TREE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_RUBBER_TREE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_RUBBER_TREE_WOOD.get().asItem());
 
         tag(ItemTags.PLANKS)
-                .add(ModBlocks.REDDIAMOND_PLANKS.get().asItem());
+                .add(ModBlocks.REDDIAMOND_PLANKS.get().asItem())
+                .add(ModBlocks.RUBBER_TREE_PLANKS.get().asItem());
     }
 }
 

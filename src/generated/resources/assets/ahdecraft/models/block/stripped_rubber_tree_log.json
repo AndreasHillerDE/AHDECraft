@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ahdecraft:block/stripped_rubber_tree_log_top",
+    "side": "ahdecraft:block/stripped_rubber_tree_log"
+  }
+}

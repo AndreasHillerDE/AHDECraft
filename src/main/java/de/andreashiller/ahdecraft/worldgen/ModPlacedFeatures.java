@@ -54,6 +54,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_EMERALD_ORE_PLACED_KEY = registerKey("nether_emerald_ore_placed");
 
     public static final ResourceKey<PlacedFeature> REDDIAMOND_PLACED_KEY = registerKey("reddiamond_placed");
+    public static final ResourceKey<PlacedFeature> RUBBER_PLACED_KEY = registerKey("rubber_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -186,8 +187,12 @@ public class ModPlacedFeatures {
 
         // TREE GENERATION
         register(context, REDDIAMOND_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.REDDIAMOND_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f,2),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1,0.1f,1),
                         ModBlocks.REDDIAMOND_SAPLING.get()));
+
+        register(context, RUBBER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBBER_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1,0.1f,1),
+                        ModBlocks.RUBBER_TREE_SAPLING.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
