@@ -215,7 +215,7 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_REDDIAMOND_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.FOREST)),
+                HolderSet.direct(biomes.getOrThrow(Biomes.MEADOW)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.REDDIAMOND_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 

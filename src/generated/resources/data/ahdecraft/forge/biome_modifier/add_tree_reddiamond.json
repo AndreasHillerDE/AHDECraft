@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "minecraft:forest",
+  "biomes": "minecraft:meadow",
   "features": "ahdecraft:reddiamond_placed",
   "step": "vegetal_decoration"
 }

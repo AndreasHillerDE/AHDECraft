@@ -227,19 +227,19 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(4, 2, 3),
 
                 BlockStateProvider.simple(ModBlocks.REDDIAMOND_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), 3),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), 4),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         // RUBBER TREE
         register(context, RUBBER_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LOG.get()),
-                new StraightTrunkPlacer(4, 4, 3),
+                new StraightTrunkPlacer(4, 2, 3),
 
                 BlockStateProvider.simple(ModBlocks.RUBBER_TREE_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(1), 3),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), 4),
 
-                new TwoLayersFeatureSize(2, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
