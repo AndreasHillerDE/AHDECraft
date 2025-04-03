@@ -34,6 +34,8 @@
   "item.ahdecraft.reddiamond.leggings": "Red Diamond Leggings",
   "item.ahdecraft.reddiamond.boots": "Red Diamond Boots",
 
+  "item.ahdecraft.blue_berry": "Blue Berry",
+
   "block.ahdecraft.ruby_ore": "Ruby Ore",
   "block.ahdecraft.peridot_ore": "Peridot Ore",
   "block.ahdecraft.sapphire_ore": "Sappire Ore",
@@ -108,11 +110,14 @@
   "block.ahdecraft.reddiamond_leaves": "Red Diamond Leaves",
   "block.ahdecraft.reddiamond_sapling": "Red Diamond Sapling",
 
+  "block.ahdecraft.blue_berry_bush": "Blue Berry Bush",
+
   "creativetab.ahdecraft.items": "AHDECraft Items",
   "creativetab.ahdecraft.tools": "AHDECraft Tools",
   "creativetab.ahdecraft.weapons": "AHDECraft Weapons",
   "creativetab.ahdecraft.armor": "AHDECraft Armor",
   "creativetab.ahdecraft.blocks": "AHDECraft Building Blocks",
   "creativetab.ahdecraft.ores": "AHDECraft Ores",
-  "creativetab.ahdecraft.nature": "AHDECraft Nature"
+  "creativetab.ahdecraft.nature": "AHDECraft Nature",
+  "creativetab.ahdecraft.food": "AHDECraft Food"
 }

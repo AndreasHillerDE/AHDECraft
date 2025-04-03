@@ -2,17 +2,23 @@ package de.andreashiller.ahdecraft.datagen;
 
 import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.block.ModBlocks;
+import de.andreashiller.ahdecraft.block.custom.BlueBerryBushBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.event.RegisterRecipeBookCategoriesEvent;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
 
@@ -116,6 +122,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.RUBBER_TREE_LEAVES);
         saplingBlock(ModBlocks.RUBBER_TREE_SAPLING);
 
+        // FOOD
+        makeBush(((SweetBerryBushBlock) ModBlocks.BLUE_BERRY_BUSH.get()), "blue_berry_bush_stage", "blue_berry_bush_stage");
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
@@ -141,5 +150,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(),
                 models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> states(state, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] states(BlockState state, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(BlueBerryBushBlock.AGE),
+                ResourceLocation.fromNamespaceAndPath(AHDECraft.MOD_ID, "block/" + textureName + state.getValue(BlueBerryBushBlock.AGE))).renderType("cutout"));
+
+        return models;
     }
 }

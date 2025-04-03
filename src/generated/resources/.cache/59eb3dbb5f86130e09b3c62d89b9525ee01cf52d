@@ -1,6 +1,7 @@
-// 1.21.1	2025-03-31T18:06:53.0865732	Loot Tables
+// 1.21.1	2025-04-03T14:55:05.8075552	Loot Tables
 181fb44b339f4e8e24bbe8ff6e04a35a964281bf data/ahdecraft/loot_table/blocks/alu_block.json
 b4587a49c34a45823b07d2066baca9a5504483cb data/ahdecraft/loot_table/blocks/alu_ore.json
+a388d37c923cedd10c71d59309e3f8d47a04d8df data/ahdecraft/loot_table/blocks/blue_berry_bush.json
 1c35ceae39155514535ae9233cc6ccdb81cfcf25 data/ahdecraft/loot_table/blocks/deepslate_alu_ore.json
 b53435a11b41deedc56ca011798b7ac544266f70 data/ahdecraft/loot_table/blocks/deepslate_lead_ore.json
 67a8120850753784849d8654f3920db3b0c90312 data/ahdecraft/loot_table/blocks/deepslate_peridot_ore.json

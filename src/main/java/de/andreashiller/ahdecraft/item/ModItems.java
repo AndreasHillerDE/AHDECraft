@@ -1,6 +1,7 @@
 package de.andreashiller.ahdecraft.item;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.ModBlocks;
 import de.andreashiller.ahdecraft.item.custom.FuelItem;
 
 import net.minecraft.world.item.*;
@@ -98,6 +99,10 @@ public class ModItems {
     public static final RegistryObject<Item> REDDIAMOND_BOOTS =ITEMS.register("reddiamond_boots",
             () -> new ArmorItem(ModArmorMaterials.REDDIAMOND_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35))));
+
+    // FOOD
+    public static final RegistryObject<Item> BLUE_BERRY = ITEMS.register("blue_berry",
+            () -> new ItemNameBlockItem(ModBlocks.BLUE_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperies.BLUE_BERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

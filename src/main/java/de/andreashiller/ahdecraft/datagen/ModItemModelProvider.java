@@ -79,6 +79,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.REDDIAMOND_SAPLING);
         saplingItem(ModBlocks.RUBBER_TREE_SAPLING);
+
+        // FOOD
+        basicItem(ModItems.BLUE_BERRY.get());
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

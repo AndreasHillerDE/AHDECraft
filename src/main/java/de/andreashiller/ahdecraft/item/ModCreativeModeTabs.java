@@ -70,6 +70,17 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.REDDIAMOND_PLANKS.get());
                         output.accept(ModBlocks.RUBBER_TREE_PLANKS.get());
+
+                        output.accept(ModBlocks.BLUE_BERRY_BUSH.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> AHDECRAFT_FOOD_TAB = CREATIVE_MODE_TABS.register("ahdecraft_food_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.BLUE_BERRY.get()))
+                    .withTabsBefore(AHDECRAFT_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.ahdecraft.food"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.BLUE_BERRY.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_TOOLS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_tools_tab",
