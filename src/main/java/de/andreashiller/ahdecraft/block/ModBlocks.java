@@ -1,8 +1,10 @@
 package de.andreashiller.ahdecraft.block;
 
 import de.andreashiller.ahdecraft.AHDECraft;
+import de.andreashiller.ahdecraft.block.custom.BlackBerryBushBlock;
 import de.andreashiller.ahdecraft.block.custom.BlueBerryBushBlock;
 import de.andreashiller.ahdecraft.block.custom.ModFlammableRotatedPillarBlock;
+import de.andreashiller.ahdecraft.block.custom.RaspBerryBushBlock;
 import de.andreashiller.ahdecraft.item.ModItems;
 import de.andreashiller.ahdecraft.worldgen.tree.ModTreeGrowers;
 import net.minecraft.core.BlockPos;
@@ -383,6 +385,12 @@ public class ModBlocks {
     // BUSHES
     public static final RegistryObject<Block> BLUE_BERRY_BUSH = BLOCKS.register("blue_berry_bush",
             () -> new BlueBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final RegistryObject<Block> RASPBERRY_BUSH = BLOCKS.register("raspberry_bush",
+            () -> new RaspBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final RegistryObject<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush",
+            () -> new BlackBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

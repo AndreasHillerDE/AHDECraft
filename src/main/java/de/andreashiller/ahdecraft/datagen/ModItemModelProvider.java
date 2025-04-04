@@ -82,6 +82,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // FOOD
         basicItem(ModItems.BLUE_BERRY.get());
+        basicItem(ModItems.RASPBERRY.get());
+        basicItem(ModItems.BLACKBERRY.get());
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

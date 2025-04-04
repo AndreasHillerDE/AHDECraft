@@ -35,6 +35,8 @@
   "item.ahdecraft.reddiamond.boots": "Red Diamond Boots",
 
   "item.ahdecraft.blue_berry": "Blue Berry",
+  "item.ahdecraft.raspberry": "Raspberry",
+  "item.ahdecraft.blackberry": "Black Berry",
 
   "block.ahdecraft.ruby_ore": "Ruby Ore",
   "block.ahdecraft.peridot_ore": "Peridot Ore",
@@ -110,7 +112,13 @@
   "block.ahdecraft.reddiamond_leaves": "Red Diamond Leaves",
   "block.ahdecraft.reddiamond_sapling": "Red Diamond Sapling",
 
-  "block.ahdecraft.blue_berry_bush": "Blue Berry Bush",
+  "block.ahdecraft.rubber_log": "Rubber Diamond Log",
+  "block.ahdecraft.rubber_wood": "Rubber Diamond Wood",
+  "block.ahdecraft.stripped_rubber_log": "Stripped Rubber Diamond Log",
+  "block.ahdecraft.stripped_rubber_wood": "Stripped Rubber Diamond Wood",
+  "block.ahdecraft.rubber_planks": "Rubber Diamond Planks",
+  "block.ahdecraft.rubber_leaves": "Rubber Diamond Leaves",
+  "block.ahdecraft.rubber_sapling": "Rubber Diamond Sapling",
 
   "creativetab.ahdecraft.items": "AHDECraft Items",
   "creativetab.ahdecraft.tools": "AHDECraft Tools",

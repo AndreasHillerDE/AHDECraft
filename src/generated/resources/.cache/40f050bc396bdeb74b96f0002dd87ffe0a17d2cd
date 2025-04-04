@@ -1,10 +1,12 @@
-// 1.21.1	2025-04-03T14:55:05.8065554	Item Models: ahdecraft
+// 1.21.1	2025-04-04T22:57:14.1552799	Item Models: ahdecraft
 177ef5a3c5115f535df2a2e00a8078b6dc59e52d assets/ahdecraft/models/item/alu_ingot.json
+86d69c8340d437c77d22f15c39561ba5899f3d2a assets/ahdecraft/models/item/blackberry.json
 fe2dc2749c844cbc7e5c5aee4d48fbf9055f09cd assets/ahdecraft/models/item/blue_berry.json
 7576f31fd2e45fdf6a9ef75c499c99ba60976b0a assets/ahdecraft/models/item/conversion_ball.json
 a26ad55bfb35397fb18544b0a53613ea7defb1a2 assets/ahdecraft/models/item/conversion_wand.json
 a37c39672245dafe3b595d696bd727fe714525e6 assets/ahdecraft/models/item/lead_ingot.json
 c696c06a2866e07032b6aea8323ccbadff0bc57c assets/ahdecraft/models/item/peridot.json
+f6ea981abb8a84a2e21e04c814eb4ad940b2cb94 assets/ahdecraft/models/item/raspberry.json
 24f0216db55de69a47bf468cbb0e9143586b2d93 assets/ahdecraft/models/item/raw_alu.json
 b1863a6b3d248bcf65018afd4c6bdb0d032c05da assets/ahdecraft/models/item/raw_lead.json
 76a2d2ca3636b931b7c811f37dbce916f6cc07b0 assets/ahdecraft/models/item/raw_silicium.json

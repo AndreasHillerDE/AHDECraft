@@ -103,6 +103,10 @@ public class ModItems {
     // FOOD
     public static final RegistryObject<Item> BLUE_BERRY = ITEMS.register("blue_berry",
             () -> new ItemNameBlockItem(ModBlocks.BLUE_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperies.BLUE_BERRY)));
+    public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
+            () -> new ItemNameBlockItem(ModBlocks.RASPBERRY_BUSH.get(), new Item.Properties().food(ModFoodProperies.RASPBERRY)));
+    public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
+            () -> new ItemNameBlockItem(ModBlocks.BLACKBERRY_BUSH.get(), new Item.Properties().food(ModFoodProperies.BLACKBERRY)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

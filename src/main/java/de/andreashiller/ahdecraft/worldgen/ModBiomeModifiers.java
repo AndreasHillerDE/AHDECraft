@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.biome.BiomeResolver;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
@@ -52,6 +53,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_REDDIAMOND_TREE = registerKey("add_tree_reddiamond");
     public static final ResourceKey<BiomeModifier> ADD_RUBBER_TREE = registerKey("add_tree_rubber");
 
+    public static final ResourceKey<BiomeModifier> ADD_BLUE_BERRY_BUSH = registerKey("add_blue_berry_bush");
+    public static final ResourceKey<BiomeModifier> ADD_RASPBERRY_BUSH = registerKey("add_raspberry_bush");
+    public static final ResourceKey<BiomeModifier> ADD_BLACKBERRY_BUSH = registerKey("add_blackberry_bush");
 
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
@@ -222,6 +226,21 @@ public class ModBiomeModifiers {
         context.register(ADD_RUBBER_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(biomes.getOrThrow(Biomes.FOREST),biomes.getOrThrow(Biomes.SWAMP)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.RUBBER_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_BLUE_BERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BIRCH_FOREST),biomes.getOrThrow(Biomes.FOREST)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.BLUE_BERRY_BUSH_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_RASPBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BIRCH_FOREST),biomes.getOrThrow(Biomes.FOREST)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.RASP_BERRY_BUSH_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_BLACKBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(Biomes.BIRCH_FOREST),biomes.getOrThrow(Biomes.FOREST)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.BLACK_BERRY_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

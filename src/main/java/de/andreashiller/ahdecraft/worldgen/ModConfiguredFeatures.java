@@ -4,20 +4,22 @@ import de.andreashiller.ahdecraft.AHDECraft;
 import de.andreashiller.ahdecraft.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -63,6 +65,10 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> REDDIAMOND_KEY = registerKey("reddiamond");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RUBBER_KEY = registerKey("rubber");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_BERRY_BUSH_KEY = registerKey("blue_berry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RASPBERRY_BUSH_KEY = registerKey("raspberry_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLACKBERRY_BUSH_KEY = registerKey("blackberry_bush");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -240,7 +246,30 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(1), 4),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        // BLUE BERRY BUSH
+        register(context, BLUE_BERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration (
+                                BlockStateProvider.simple(ModBlocks.BLUE_BERRY_BUSH.get()
+                                        .defaultBlockState().setValue(SweetBerryBushBlock.AGE, 3))
+                        ), List.of(Blocks.GRASS_BLOCK)));
+
+        // RASPBERRY BUSH
+        register(context, RASPBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration (
+                        BlockStateProvider.simple(ModBlocks.RASPBERRY_BUSH.get()
+                                .defaultBlockState().setValue(SweetBerryBushBlock.AGE, 3))
+                ), List.of(Blocks.GRASS_BLOCK)));
+
+        // RASPBERRY BUSH
+        register(context, BLACKBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration (
+                        BlockStateProvider.simple(ModBlocks.BLACKBERRY_BUSH.get()
+                                .defaultBlockState().setValue(SweetBerryBushBlock.AGE, 3))
+                ), List.of(Blocks.GRASS_BLOCK)));
     }
+
+
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(AHDECraft.MOD_ID, name));

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ahdecraft:reddiamond_leaves"
+  },
+  "result": {
+    "count": 4,
+    "id": "ahdecraft:reddiamond_dust"
+  }
+}

@@ -47,6 +47,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CONVERSION_WAND.get()),has(ModItems.CONVERSION_WAND.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REDDIAMOND_WOOD.get(), 3)
+                .pattern("RR")
+                .pattern("RR")
+                .define('R', ModBlocks.REDDIAMOND_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.REDDIAMOND_WOOD.get()),has(ModBlocks.REDDIAMOND_WOOD.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUBBER_TREE_WOOD.get(), 3)
+                .pattern("RR")
+                .pattern("RR")
+                .define('R', ModBlocks.RUBBER_TREE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.RUBBER_TREE_WOOD.get()),has(ModBlocks.RUBBER_TREE_WOOD.get())).save(pRecipeOutput);
+
         createDefaultBlockRecipe(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK.get(), 1, ModItems.RUBY.get(), pRecipeOutput);
         createDefaultBlockRecipe(RecipeCategory.MISC, ModBlocks.PERIDOT_BLOCK.get(), 1, ModItems.PERIDOT.get(), pRecipeOutput);
         createDefaultBlockRecipe(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get(), 1, ModItems.SAPPHIRE.get(), pRecipeOutput);
@@ -87,6 +99,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createDefaultShapelessRecipe(RecipeCategory.MISC, ModItems.RAW_SILICIUM.get(), ModBlocks.RAW_SILICIUM_BLOCK.get(), 9, pRecipeOutput);
 
         createDefaultShapelessRecipe(RecipeCategory.MISC, ModBlocks.REDDIAMOND_PLANKS.get(), ModBlocks.REDDIAMOND_LOG.get(), 4, pRecipeOutput);
+        createDefaultShapelessRecipe(RecipeCategory.MISC, ModBlocks.RUBBER_TREE_PLANKS.get(), ModBlocks.RUBBER_TREE_LOG.get(), 4, pRecipeOutput);
 
         // SMELTING
         oreSmelting(pRecipeOutput, REDDIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REDDIAMONDINGOT.get(), 0.25f, 200, "reddiamond");
@@ -113,6 +126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.PERIDOT.get(), ModBlocks.PERIDOT_ORE.get(),3);
         stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), ModBlocks.SAPPHIRE_ORE.get(),3);
         stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.SILICONE.get(), ModBlocks.SILICONE_ORE.get(),4);
+        stonecutterResultFromBase(pRecipeOutput, RecipeCategory.MISC, ModItems.REDDIAMONDDUST.get(), ModBlocks.REDDIAMOND_LEAVES.get(), 4);
 
         // Toolsets
         createSwordRecipe(RecipeCategory.MISC, ModItems.REDDIAMOND_SWORD.get(), ModItems.REDDIAMONDINGOT.get(), pRecipeOutput);

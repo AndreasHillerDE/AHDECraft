@@ -1,6 +1,7 @@
-// 1.21.1	2025-04-03T14:55:05.8075552	Loot Tables
+// 1.21.1	2025-04-04T22:57:14.1572792	Loot Tables
 181fb44b339f4e8e24bbe8ff6e04a35a964281bf data/ahdecraft/loot_table/blocks/alu_block.json
 b4587a49c34a45823b07d2066baca9a5504483cb data/ahdecraft/loot_table/blocks/alu_ore.json
+914ca9792c0f14e47edb374abf2aa3f12d6772d7 data/ahdecraft/loot_table/blocks/blackberry_bush.json
 a388d37c923cedd10c71d59309e3f8d47a04d8df data/ahdecraft/loot_table/blocks/blue_berry_bush.json
 1c35ceae39155514535ae9233cc6ccdb81cfcf25 data/ahdecraft/loot_table/blocks/deepslate_alu_ore.json
 b53435a11b41deedc56ca011798b7ac544266f70 data/ahdecraft/loot_table/blocks/deepslate_lead_ore.json
@@ -37,6 +38,7 @@ c45e1da9ad006e36c2dd94bab47bed7a1f7946c5 data/ahdecraft/loot_table/blocks/nether
 637004b80df8daa4c547ce10f0d2f8eff1eda137 data/ahdecraft/loot_table/blocks/nether_tin_ore.json
 b1b73d9f4b05e19e4d01492a03feec1b023c92be data/ahdecraft/loot_table/blocks/peridot_block.json
 f51d380baaccaae323621231b17a4e12d1a7b4d4 data/ahdecraft/loot_table/blocks/peridot_ore.json
+313bb46381f5a6d746fef8aed6e72b4048c89408 data/ahdecraft/loot_table/blocks/raspberry_bush.json
 e7efc0dba22fcb65237a47de54462f17811fef9a data/ahdecraft/loot_table/blocks/raw_alu_block.json
 951629104f1adb1f03cee2d42bbd3feba34a8312 data/ahdecraft/loot_table/blocks/raw_lead_block.json
 97f2918348fd0210d284115a323363e23289dc94 data/ahdecraft/loot_table/blocks/raw_silicium_block.json

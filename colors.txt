@@ -7,4 +7,6 @@ Silicone	#34332d
 Silicium	#d8bf8c
 
 RubberTreeSap	#001402 (Grün)	331900 (Burke) 	
-Busch	blueberry		Busch = 30ff00		Berry=
+Busch	blueberry		Busch = 30ff00		Berry=111066
+Busch	raspberry		Busch = 30ff00		Berry=f63a3a
+Busch	blackberry		Busch = 30ff00		Berry=181818

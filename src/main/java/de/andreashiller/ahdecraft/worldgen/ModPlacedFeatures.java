@@ -11,9 +11,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
@@ -55,6 +53,10 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> REDDIAMOND_PLACED_KEY = registerKey("reddiamond_placed");
     public static final ResourceKey<PlacedFeature> RUBBER_PLACED_KEY = registerKey("rubber_placed");
+
+    public static final ResourceKey<PlacedFeature> BLUE_BERRY_BUSH_PLACED_KEY = registerKey("blue_berry_bush_placed");
+    public static final ResourceKey<PlacedFeature> RASP_BERRY_BUSH_PLACED_KEY = registerKey("raspberry_bush_placed");
+    public static final ResourceKey<PlacedFeature> BLACK_BERRY_BUSH_PLACED_KEY = registerKey("blackberry_bush_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -193,6 +195,14 @@ public class ModPlacedFeatures {
         register(context, RUBBER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBBER_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1,0.1f,1),
                         ModBlocks.RUBBER_TREE_SAPLING.get()));
+
+        // BUSH GENERATION
+        register(context, BLUE_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUE_BERRY_BUSH_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, RASP_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RASPBERRY_BUSH_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, BLACK_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLACKBERRY_BUSH_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

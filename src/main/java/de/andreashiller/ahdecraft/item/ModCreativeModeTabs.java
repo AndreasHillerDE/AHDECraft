@@ -71,7 +71,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.REDDIAMOND_PLANKS.get());
                         output.accept(ModBlocks.RUBBER_TREE_PLANKS.get());
 
-                        output.accept(ModBlocks.BLUE_BERRY_BUSH.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_FOOD_TAB = CREATIVE_MODE_TABS.register("ahdecraft_food_tab",
@@ -81,6 +80,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.ahdecraft.food"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLUE_BERRY.get());
+                        output.accept(ModItems.RASPBERRY.get());
+                        output.accept(ModItems.BLACKBERRY.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> AHDECRAFT_TOOLS_TAB = CREATIVE_MODE_TABS.register("ahdecraft_tools_tab",

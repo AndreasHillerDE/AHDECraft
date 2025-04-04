@@ -124,6 +124,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         // FOOD
         makeBush(((SweetBerryBushBlock) ModBlocks.BLUE_BERRY_BUSH.get()), "blue_berry_bush_stage", "blue_berry_bush_stage");
+        makeBush(((SweetBerryBushBlock) ModBlocks.RASPBERRY_BUSH.get()), "raspberry_bush_stage", "raspberry_bush_stage");
+        makeBush(((SweetBerryBushBlock) ModBlocks.BLACKBERRY_BUSH.get()), "blackberry_bush_stage", "blackberry_bush_stage");
 
     }
 
